@@ -10,3 +10,14 @@ HaloGeneric halo = new HaloGeneric();
 
 // Panggil metode SapaUser
 halo.SapaUser(nama);
+
+Console.WriteLine("Masukkan NIM:");
+
+// Masukkan NIM
+string nim = Console.ReadLine();
+
+// Membuat objek DataGeneric dengan tipe data string
+DataGeneric<string> dataNIM = new DataGeneric<string>(nim);
+
+// Menampilkan data NIM yang tersimpan
+dataNIM.printData();
